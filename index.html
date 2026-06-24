@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ Assistant — Example Corp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       DEMO LANDING PAGE
+  ══════════════════════════════════════════════════════════ -->
+  <div class="page-bg">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+  </div>
+
+  <main class="demo-page">
+    <div class="demo-card">
+      <div class="demo-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Live Demo — Python + Flask Backend
+      </div>
+      <h1 class="demo-title">Example Corp<br /><span class="title-gradient">Support Centre</span></h1>
+      <p class="demo-desc">
+        Click the <strong>chat button</strong> at the bottom-right to open the
+        AI-powered FAQ Assistant. It understands typos, short forms, and
+        informal English.
+      </p>
+
+      <div class="demo-pills">
+        <div class="pill">
+          <span class="pill-icon">🔍</span>
+          <span>Fuzzy FAQ Match</span>
+        </div>
+        <div class="pill">
+          <span class="pill-icon">📖</span>
+          <span>Wikipedia Fallback</span>
+        </div>
+        <div class="pill">
+          <span class="pill-icon">🤖</span>
+          <span>Hugging Face AI</span>
+        </div>
+        <div class="pill">
+          <span class="pill-icon">🐍</span>
+          <span>Python / Flask</span>
+        </div>
+      </div>
+
+      <div class="demo-examples">
+        <p class="examples-label">Try typing these messy questions:</p>
+        <div class="example-chips">
+          <span class="example-chip">"wat is ur timing"</span>
+          <span class="example-chip">"how to cntct support"</span>
+          <span class="example-chip">"refund avalable ah"</span>
+          <span class="example-chip">"cant login"</span>
+          <span class="example-chip">"reset my passwrd"</span>
+          <span class="example-chip">"where ur office"</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING CHAT WIDGET
+  ══════════════════════════════════════════════════════════ -->
+
+  <!-- Toggle Button -->
+  <button class="chat-fab" id="chatFab" aria-label="Open FAQ Assistant">
+    <span class="fab-open">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </span>
+    <span class="fab-close" style="display:none;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </span>
+    <span class="fab-badge" id="fabBadge" style="display:none;">1</span>
+  </button>
+
+  <!-- Chat Window -->
+  <div class="chat-window" id="chatWindow" role="dialog" aria-label="FAQ Chat Assistant" aria-hidden="true">
+
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="header-left">
+        <div class="avatar-ring">
+          <div class="bot-avatar">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7H3a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2zM7.5 14.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0zm7 0a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0zM3 21a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="header-text">
+          <span class="header-title">FAQ Assistant</span>
+          <span class="header-sub">
+            <span class="live-dot"></span>FAQ · Wikipedia · AI
+          </span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="hdr-btn" id="darkToggle" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="hdr-btn" id="clearBtn" title="Clear chat" aria-label="Clear chat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
+            <path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/>
+          </svg>
+        </button>
+        <button class="hdr-btn hdr-close" id="closeBtn" title="Close chat" aria-label="Close chat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="messages-wrap" id="messagesWrap" role="log" aria-live="polite">
+      <!-- Injected by script.js -->
+    </div>
+
+    <!-- Quick Replies -->
+    <div class="quick-area" id="quickArea">
+      <button class="qchip" data-msg="What are your business hours?">⏰ Business hours</button>
+      <button class="qchip" data-msg="How to contact support?">📞 Contact support</button>
+      <button class="qchip" data-msg="What is your refund policy?">💸 Refund policy</button>
+      <button class="qchip" data-msg="How to reset my password?">🔑 Reset password</button>
+      <button class="qchip" data-msg="What are your pricing plans?">📋 Pricing plans</button>
+      <button class="qchip" data-msg="How do I track my order?">📦 Track order</button>
+    </div>
+
+    <!-- Input Row -->
+    <div class="input-row">
+      <input
+        type="text"
+        id="userInput"
+        class="msg-input"
+        placeholder="Ask me anything…"
+        maxlength="500"
+        autocomplete="off"
+        aria-label="Type your question"
+      />
+      <button class="send-btn" id="sendBtn" aria-label="Send message">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="chat-footer">
+      Powered by <strong>rapidfuzz</strong> · <strong>Wikipedia</strong> · <strong>Hugging Face</strong>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

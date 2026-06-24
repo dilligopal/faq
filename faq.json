@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "category": "General",
+    "question": "What are your business hours?",
+    "keywords": ["business hours", "timings", "open", "working hours", "timing", "wat is ur timing", "when open", "office hours", "schedule"],
+    "answer": "Our business hours are Monday to Friday from 9:00 AM to 6:00 PM IST. We are closed on weekends and public holidays."
+  },
+  {
+    "id": 2,
+    "category": "General",
+    "question": "Where is your office located?",
+    "keywords": ["office", "location", "address", "where", "place", "office location", "ur office", "your office", "situated"],
+    "answer": "Our main office is located at 42, Tech Park, MG Road, Bangalore - 560001, Karnataka, India. We also have regional offices in Mumbai and Delhi."
+  },
+  {
+    "id": 3,
+    "category": "General",
+    "question": "What services do you offer?",
+    "keywords": ["services", "offer", "provide", "what do you do", "products", "offerings", "service list"],
+    "answer": "We offer a range of services including software development, cloud consulting, IT support, digital marketing, and product design. Visit our Services page for full details."
+  },
+  {
+    "id": 4,
+    "category": "Contact",
+    "question": "How can I contact customer support?",
+    "keywords": ["contact", "support", "reach", "talk", "help", "cntct", "contct", "how to contact", "customer service", "helpdesk", "contact support"],
+    "answer": "You can contact our support team via email at support@example.com, call us at +91-9876543210, or use the live chat on our website. Support hours are Mon–Sat, 9 AM to 8 PM."
+  },
+  {
+    "id": 5,
+    "category": "Contact",
+    "question": "What is the support email address?",
+    "keywords": ["email", "mail", "email address", "support email", "write to", "send email"],
+    "answer": "Our support email is support@example.com. We typically respond within 24 business hours. For urgent issues, please call us directly."
+  },
+  {
+    "id": 6,
+    "category": "Account",
+    "question": "How do I reset my password?",
+    "keywords": ["reset password", "forgot password", "change password", "passwrd", "password reset", "cant login", "lost password", "password help", "new password"],
+    "answer": "To reset your password: (1) Click 'Forgot Password' on the login page. (2) Enter your registered email. (3) Check your inbox for the reset link. (4) Click the link and set a new password. The link expires in 30 minutes."
+  },
+  {
+    "id": 7,
+    "category": "Account",
+    "question": "I cannot login to my account",
+    "keywords": ["cant login", "cannot login", "login problem", "login issue", "not able to login", "login error", "sign in problem", "account login", "login help", "wont login"],
+    "answer": "If you cannot log in: (1) Check your email and password are correct. (2) Try resetting your password via 'Forgot Password'. (3) Clear your browser cache. (4) Disable browser extensions. If the issue persists, contact support@example.com."
+  },
+  {
+    "id": 8,
+    "category": "Account",
+    "question": "How do I create a new account?",
+    "keywords": ["create account", "new account", "register", "sign up", "signup", "registration", "join", "open account"],
+    "answer": "Creating an account is free and easy. Click 'Sign Up' on our homepage, fill in your name, email, and password, verify your email address, and you're all set!"
+  },
+  {
+    "id": 9,
+    "category": "Account",
+    "question": "How do I delete my account?",
+    "keywords": ["delete account", "close account", "remove account", "deactivate", "cancel account", "terminate account"],
+    "answer": "To delete your account, go to Settings > Account > Delete Account. Note: This action is permanent and all your data will be erased. If you just need a break, consider deactivating instead."
+  },
+  {
+    "id": 10,
+    "category": "Refund",
+    "question": "What is your refund policy?",
+    "keywords": ["refund", "money back", "return policy", "refund policy", "refund avalable", "get money back", "cancel and refund", "refund available", "refund process"],
+    "answer": "We offer a 30-day money-back guarantee on all plans. To request a refund, contact support@example.com within 30 days of purchase with your order ID. Refunds are processed within 5–7 business days."
+  },
+  {
+    "id": 11,
+    "category": "Refund",
+    "question": "How long does a refund take?",
+    "keywords": ["refund time", "how long refund", "when will i get refund", "refund days", "refund duration", "refund status"],
+    "answer": "Once your refund is approved, it takes 5–7 business days to reflect in your account. You will receive a confirmation email when the refund is initiated."
+  },
+  {
+    "id": 12,
+    "category": "Pricing",
+    "question": "What are your pricing plans?",
+    "keywords": ["price", "pricing", "cost", "plans", "how much", "rates", "subscription", "fees", "charges", "plan cost"],
+    "answer": "We offer three plans: Basic (₹999/month) – for individuals, Pro (₹2,499/month) – for small teams, and Enterprise (custom pricing) – for large organizations. Annual plans get a 20% discount."
+  },
+  {
+    "id": 13,
+    "category": "Pricing",
+    "question": "Do you offer a free trial?",
+    "keywords": ["free trial", "trial", "try for free", "demo", "test", "free version", "free plan", "try before buy"],
+    "answer": "Yes! We offer a 14-day free trial on all plans — no credit card required. You get full access to all features during the trial period."
+  },
+  {
+    "id": 14,
+    "category": "Billing",
+    "question": "What payment methods do you accept?",
+    "keywords": ["payment", "pay", "credit card", "debit card", "upi", "netbanking", "payment methods", "how to pay", "payment options"],
+    "answer": "We accept all major credit/debit cards (Visa, Mastercard, Amex), UPI, Net Banking, and PayPal. For Enterprise plans, we also support bank transfers and invoicing."
+  },
+  {
+    "id": 15,
+    "category": "Billing",
+    "question": "How do I download my invoice?",
+    "keywords": ["invoice", "bill", "receipt", "download invoice", "billing history", "payment receipt", "get invoice"],
+    "answer": "Log in to your account, go to Settings > Billing > Invoice History. You can download invoices in PDF format for any past transaction."
+  },
+  {
+    "id": 16,
+    "category": "Billing",
+    "question": "How do I update my billing information?",
+    "keywords": ["update billing", "change card", "update payment", "billing info", "change payment method", "new card"],
+    "answer": "Go to Settings > Billing > Payment Methods to update your card or billing details. Changes take effect from your next billing cycle."
+  },
+  {
+    "id": 17,
+    "category": "Delivery",
+    "question": "How long does delivery take?",
+    "keywords": ["delivery", "shipping", "how long", "delivery time", "when will i receive", "dispatch", "shipping time", "how many days"],
+    "answer": "Standard delivery takes 5–7 business days. Express delivery (2–3 days) is available at an additional charge. You will receive a tracking number once your order is dispatched."
+  },
+  {
+    "id": 18,
+    "category": "Delivery",
+    "question": "Do you offer international shipping?",
+    "keywords": ["international shipping", "ship abroad", "overseas delivery", "global shipping", "international delivery", "outside india"],
+    "answer": "Yes, we ship to over 50 countries. International delivery typically takes 10–15 business days. Customs duties may apply depending on your country."
+  },
+  {
+    "id": 19,
+    "category": "Technical",
+    "question": "The website is not loading properly",
+    "keywords": ["website not loading", "site down", "not working", "page not loading", "website issue", "cant open website", "website broken", "website error", "site not working"],
+    "answer": "If our website isn't loading: (1) Refresh the page (Ctrl+F5). (2) Clear your browser cache. (3) Try a different browser. (4) Check your internet connection. (5) Try accessing from incognito/private mode. If the issue continues, email support@example.com."
+  },
+  {
+    "id": 20,
+    "category": "Technical",
+    "question": "How do I update the app?",
+    "keywords": ["update app", "new version", "upgrade app", "latest version", "app update", "how to update"],
+    "answer": "For mobile: visit the App Store (iOS) or Play Store (Android) and tap 'Update'. For desktop: the app updates automatically, or go to Help > Check for Updates."
+  },
+  {
+    "id": 21,
+    "category": "Technical",
+    "question": "I am getting an error message",
+    "keywords": ["error", "error message", "getting error", "bug", "issue", "problem", "something went wrong", "error code"],
+    "answer": "Please take a screenshot of the error and email it to support@example.com with a description of what you were doing. Our technical team will respond within 4 hours on business days."
+  },
+  {
+    "id": 22,
+    "category": "Security",
+    "question": "Is my data safe with you?",
+    "keywords": ["data safe", "security", "privacy", "data protection", "safe", "secure", "is it safe", "data privacy", "information safe"],
+    "answer": "Yes, your data is fully secure. We use 256-bit SSL encryption, are ISO 27001 certified, and comply with GDPR. We never sell your data to third parties. See our Privacy Policy for full details."
+  },
+  {
+    "id": 23,
+    "category": "Security",
+    "question": "How do I enable two-factor authentication?",
+    "keywords": ["two factor", "2fa", "two step", "otp", "two factor authentication", "enable 2fa", "account security", "secure login"],
+    "answer": "Go to Settings > Security > Two-Factor Authentication and toggle it on. You can use SMS OTP or an authenticator app like Google Authenticator. Highly recommended for account safety!"
+  },
+  {
+    "id": 24,
+    "category": "Support",
+    "question": "How do I submit a support ticket?",
+    "keywords": ["support ticket", "raise ticket", "create ticket", "file complaint", "submit ticket", "help ticket", "complaint"],
+    "answer": "You can submit a support ticket by: (1) Logging into your account. (2) Clicking Help > Submit a Ticket. (3) Filling in the issue details. Our team responds within 24 hours."
+  },
+  {
+    "id": 25,
+    "category": "Support",
+    "question": "Do you have live chat support?",
+    "keywords": ["live chat", "chat support", "real time support", "instant support", "chat with agent", "online chat"],
+    "answer": "Yes! Live chat is available Monday to Saturday from 9 AM to 8 PM IST. Click the chat icon at the bottom-right of any page on our website to start a conversation."
+  },
+  {
+    "id": 26,
+    "category": "Services",
+    "question": "Can I upgrade or downgrade my plan?",
+    "keywords": ["upgrade plan", "downgrade plan", "change plan", "switch plan", "upgrade subscription", "plan change"],
+    "answer": "Yes, you can upgrade or downgrade anytime from Settings > Billing > Change Plan. Upgrades take effect immediately (prorated charge applies). Downgrades take effect at the next billing cycle."
+  },
+  {
+    "id": 27,
+    "category": "Services",
+    "question": "Do you offer custom solutions?",
+    "keywords": ["custom", "custom solution", "tailored", "bespoke", "enterprise", "custom plan", "specific needs"],
+    "answer": "Absolutely! We offer fully customized solutions for enterprises. Contact our sales team at sales@example.com or call +91-9876543211 to discuss your specific requirements."
+  },
+  {
+    "id": 28,
+    "category": "Account",
+    "question": "How do I change my email address?",
+    "keywords": ["change email", "update email", "new email", "email change", "modify email"],
+    "answer": "Go to Settings > Profile > Email Address. Enter your new email and confirm the change via the verification link sent to both old and new email addresses."
+  },
+  {
+    "id": 29,
+    "category": "Pricing",
+    "question": "Are there any hidden charges?",
+    "keywords": ["hidden charges", "extra fees", "hidden fees", "additional cost", "surprise charges", "any hidden", "extra charges"],
+    "answer": "No hidden charges whatsoever. The price you see is exactly what you pay. Taxes (GST) may apply based on your location and will always be shown clearly before checkout."
+  },
+  {
+    "id": 30,
+    "category": "Refund",
+    "question": "Can I get a refund after 30 days?",
+    "keywords": ["refund after 30 days", "late refund", "refund expired", "past 30 days", "refund period over"],
+    "answer": "Unfortunately, refunds are not available after 30 days from the purchase date. However, if you're facing a genuine issue, please write to us at support@example.com and we'll review it on a case-by-case basis."
+  },
+  {
+    "id": 31,
+    "category": "General",
+    "question": "Who are you and what do you do?",
+    "keywords": ["who are you", "about you", "what do you do", "company info", "about company", "tell me about", "about us"],
+    "answer": "We are Example Corp, a technology company founded in 2015, helping businesses grow with innovative software solutions. We serve 10,000+ clients across 50 countries."
+  },
+  {
+    "id": 32,
+    "category": "Technical",
+    "question": "Which browsers are supported?",
+    "keywords": ["browser", "supported browsers", "browser compatibility", "which browser", "chrome firefox", "browser support"],
+    "answer": "We support all modern browsers: Google Chrome (recommended), Mozilla Firefox, Microsoft Edge, and Safari. Please ensure your browser is updated to the latest version for the best experience."
+  },
+  {
+    "id": 33,
+    "category": "Delivery",
+    "question": "How do I track my order?",
+    "keywords": ["track order", "order status", "where is my order", "tracking", "order tracking", "shipment status"],
+    "answer": "Once your order is shipped, you'll receive an email with a tracking number. Visit our website, go to Orders > Track Order, and enter your tracking number to see real-time updates."
+  },
+  {
+    "id": 34,
+    "category": "Security",
+    "question": "I think my account was hacked",
+    "keywords": ["hacked", "account hacked", "unauthorized access", "someone else logged in", "account compromised", "suspicious activity"],
+    "answer": "Act immediately! (1) Change your password right away. (2) Enable Two-Factor Authentication. (3) Log out of all sessions via Settings > Security. (4) Email security@example.com with details. Our security team will help."
+  },
+  {
+    "id": 35,
+    "category": "Billing",
+    "question": "When will I be charged?",
+    "keywords": ["when charged", "billing date", "charge date", "when payment", "billing cycle", "renewal date"],
+    "answer": "You are charged on the same date every month (or year for annual plans) from the day you subscribed. You'll receive a reminder email 3 days before the renewal date."
+  }
+]
